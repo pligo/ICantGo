@@ -1,0 +1,7 @@
+parameters:
+#    i_cant_go_advert.example.class: ICantGo\AdvertBundle\Example
+
+services:
+#    i_cant_go_advert.example:
+#        class: %i_cant_go_advert.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

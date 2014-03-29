@@ -1,0 +1,30 @@
+advert:
+    pattern:  /
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:index" }
+
+advert_show:
+    pattern:  /advert/{id}/show
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:show" }
+
+advert_new:
+    pattern:  /user/advert/new
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:new" }
+
+advert_create:
+    pattern:  /user/advert/create
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:create" }
+    requirements: { _method: post }
+
+advert_edit:
+    pattern:  /user/advert/{id}/edit
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:edit" }
+
+advert_update:
+    pattern:  /user/advert/{id}/update
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:update" }
+    requirements: { _method: post|put }
+
+advert_delete:
+    pattern:  /user/advert/{id}/delete
+    defaults: { _controller: "ICantGoAdvertBundle:Advert:delete" }
+    requirements: { _method: post|delete }

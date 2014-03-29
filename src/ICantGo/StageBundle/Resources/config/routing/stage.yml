@@ -1,0 +1,30 @@
+stage:
+    pattern:  /stage/
+    defaults: { _controller: "ICantGoStageBundle:Stage:index" }
+
+stage_show:
+    pattern:  /stage/{id}/show
+    defaults: { _controller: "ICantGoStageBundle:Stage:show" }
+
+stage_new:
+    pattern:  /admin/stage/new
+    defaults: { _controller: "ICantGoStageBundle:Stage:new" }
+
+stage_create:
+    pattern:  /admin/stage/create
+    defaults: { _controller: "ICantGoStageBundle:Stage:create" }
+    requirements: { _method: post }
+
+stage_edit:
+    pattern:  /admin/stage/{id}/edit
+    defaults: { _controller: "ICantGoStageBundle:Stage:edit" }
+
+stage_update:
+    pattern:  /admin/stage/{id}/update
+    defaults: { _controller: "ICantGoStageBundle:Stage:update" }
+    requirements: { _method: post|put }
+
+stage_delete:
+    pattern:  /admin/stage/{id}/delete
+    defaults: { _controller: "ICantGoStageBundle:Stage:delete" }
+    requirements: { _method: post|delete }

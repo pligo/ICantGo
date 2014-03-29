@@ -1,0 +1,3 @@
+i_cant_go_advert_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: ICantGoAdvertBundle:Default:index }

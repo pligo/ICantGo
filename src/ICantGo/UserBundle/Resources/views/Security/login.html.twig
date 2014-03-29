@@ -1,0 +1,41 @@
+{% extends "ICantGoUserBundle::layout.html.twig" %}
+
+ {% block fos_user_content %}
+            {% if error %}
+<div>{{ error|trans }}</div>
+            {% endif %}
+<div class="jumbotron">
+    <div class="container">
+            {% trans_default_domain 'FOSUserBundle' %}
+
+
+
+        <form action="{{ path("fos_user_security_check") }}" method="post" role="form">
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+            <div class="form-group">
+                <label for="username">{{ 'security.login.username'|trans }}</label>
+                <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" />
+            </div>
+            <div class="form-group">
+                <label for="password">{{ 'security.login.password'|trans }}</label>
+                <input type="password" class="form-control" id="password" name="_password" required="required" />
+            </div>
+            <div class="form-group">
+               
+                    <div class="checkbox">
+                        <label for="remember_me"><input type="checkbox" class="checkbox" id="remember_me" name="_remember_me" value="on" />{{ 'security.login.remember_me'|trans }}
+                        </label>
+                    </div>
+                
+            </div>
+            <button type="submit" id="_submit" name="_submit"  class="btn btn-default" >{{ 'security.login.submit'|trans }}</button>
+        </form>
+    </div>
+</div>  
+{% endblock fos_user_content %}
+
+         {% block javascripts %}
+<script src="{{ asset('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+       {% endblock %}

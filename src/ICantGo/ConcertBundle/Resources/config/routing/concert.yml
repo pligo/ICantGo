@@ -1,0 +1,30 @@
+concert:
+    pattern:  /concert/
+    defaults: { _controller: "ICantGoConcertBundle:Concert:index" }
+
+concert_show:
+    pattern:  /concert/{id}/show
+    defaults: { _controller: "ICantGoConcertBundle:Concert:show" }
+
+concert_new:
+    pattern:  /admin/concert/new
+    defaults: { _controller: "ICantGoConcertBundle:Concert:new" }
+
+concert_create:
+    pattern:  /admin/concert/create
+    defaults: { _controller: "ICantGoConcertBundle:Concert:create" }
+    requirements: { _method: post }
+
+concert_edit:
+    pattern:  /admin/concert/{id}/edit
+    defaults: { _controller: "ICantGoConcertBundle:Concert:edit" }
+
+concert_update:
+    pattern:  /admin/concert/{id}/update
+    defaults: { _controller: "ICantGoConcertBundle:Concert:update" }
+    requirements: { _method: post|put }
+
+concert_delete:
+    pattern:  /admin/concert/{id}/delete
+    defaults: { _controller: "ICantGoConcertBundle:Concert:delete" }
+    requirements: { _method: post|delete }

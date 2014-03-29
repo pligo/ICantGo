@@ -1,0 +1,32 @@
+{% if page <= 5 %}
+  {% set start = 1 %}
+    {% else %}
+  {% set start = page-5 %}
+{% endif %}
+
+{% if nb < page+5 %}
+  {% set end = nb %}
+    {% else %}
+  {% set end = page+5 %}
+{% endif %}
+{% if nb != 0 %}
+            <ul class="pagination">
+                <li><a href="{{ path(current_page, {'page': 1}) }}">&laquo;</a></li>
+{% for i in start..end %}
+
+    {% if i == page %}
+                <li class="active">
+                    <a href="{{ path(current_page, {'page': i}) }}">{{ i }}</a>
+                </li>
+    {% else %}
+                <li>
+                    <a href="{{ path(current_page, {'page': i}) }}">{{ i }}</a>
+                </li>
+    {% endif %}
+
+{% endfor %}
+                <li><a href="{{ path(current_page, {'page': nb}) }}">&raquo;</a></li>
+            </ul>
+{% endif %}
+       
+ 

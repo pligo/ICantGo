@@ -1,0 +1,171 @@
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+}
+
+
+
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
+footer {
+	margin: 50px 0;
+	text-align: center;
+}
+
+a #navbar-icon {
+	height: 44px;
+	width: 124px;
+	margin-top: -11px;
+}
+
+.nav-connect-link {
+	float: right;
+	color: #999;
+	font-size: 0.8em;
+}
+
+.nav-connect-link:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#nav-connect-content {
+	vertical-align: middle;
+	margin-top: 1.5%;
+}
+
+#index-content-left {
+	padding: 2%;
+}
+
+#index-content-right {
+	padding: 2%;
+	float: right;
+}
+
+.inner-content-left {
+	margin-bottom: 3.5%;
+	border: solid 1px;
+	border-radius: 5px;
+}
+
+.inner-content-right {
+	border: solid 1px;
+	border-radius: 5px;
+}
+
+.inner-content-left h3 {
+	margin-left: 5%;
+}
+
+.inner-content-right h3 {
+	margin-left: 5%;
+}
+
+.inner-content-left p, img {
+	display: inline;
+}
+
+.inner-content-right p, img {
+	display: inline;
+}
+
+.inner-content-left img {
+	width: 100px;
+	height: 60px;
+	text-align: right;
+
+}
+
+.inner-content-right img {
+	width: 100px;
+	height: 60px;
+	text-align: right;
+
+}
+
+.advert-content {
+	height: 80px;
+}
+
+.advert-text {
+	width: 80%;
+}
+
+.advert-text h4 {
+	margin-left: 2%;
+}
+
+.advert-text p {
+	margin-left: 3%;
+}
+
+.signin-label {
+	margin: 1% 10% 3% 2%;
+	width: 20%;
+}
+
+.signin-standart-input {
+	width: 60%;
+}
+
+.signin-minsreet-input {
+	width: 8%;
+}
+
+.signin-midlsreet-input {
+	width: 52%;
+}
+
+.signin-mintown-input {
+	width: 12%;
+}
+
+.signin-midltown-input {
+	width: 48%;
+}
+
+#signin-content-left {
+	padding: 2%;
+}
+
+#signin-content-right {
+	padding: 2%;
+	float: right;
+	margin-bottom: 10%;
+}
+
+.signin-content-left {
+	border: solid 1px;
+	border-radius: 5px;
+}
+
+#signin-content-right .inner-content-right {
+	margin-bottom: 13%;
+}
+
+.content-signin-img img {
+	width: 200px;
+	height: 120px;
+}
+
+.signin-valid-button, .signin-cancel-button {
+	width: 100%;
+}
+
+.signin-valid-button {
+	height: 80px;
+}
+
+.signin-cancel-button {
+	height: 40px;
+}
+
+.signin-space-div {
+	height: 20px;
+}
+
+#signin-content-right .signin-content-btn {
+	border: none;
+}

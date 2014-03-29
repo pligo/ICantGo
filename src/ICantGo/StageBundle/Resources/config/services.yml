@@ -1,0 +1,7 @@
+parameters:
+#    i_cant_go_stage.example.class: ICantGo\StageBundle\Example
+
+services:
+#    i_cant_go_stage.example:
+#        class: %i_cant_go_stage.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

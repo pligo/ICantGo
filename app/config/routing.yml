@@ -1,0 +1,16 @@
+i_cant_go_stage:
+    resource: "@ICantGoStageBundle/Resources/config/routing/stage.yml"
+    prefix:   /
+
+i_cant_go_concert:
+    resource: "@ICantGoConcertBundle/Resources/config/routing/concert.yml"
+    prefix:   /
+
+i_cant_go_advert:
+    resource: "@ICantGoAdvertBundle/Resources/config/routing/advert.yml"
+    prefix:   /
+
+i_cant_go_user:
+    resource: "@ICantGoUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
